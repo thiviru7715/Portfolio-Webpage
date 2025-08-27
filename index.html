@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <!-- Google Font (optional) -->
+  <link rel="icon" href="avatar.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="nav">
+      <img src="avatar.png" alt="avatar" width="60">
+      <div class="brand">Thiviru Igalawithana</div>
+      <div class="spacer"></div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero / About -->
+  <section id="about">
+    <div class="container hero">
+      <div>
+        <span class="tag">👋 Hi — I build web things</span>
+        <h1>Designer & Front‑End Developer</h1>
+        <p>
+          I craft sleek, accessible user experiences with modern HTML & CSS. I love design systems, performance, and micro‑interactions.
+        </p>
+        <div class="pill-links">
+          <a href="#projects">View my work</a>
+          <a href="mailto:you@example.com">Email me</a>
+          <a href="#contact">Let’s talk</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2 class="section-title" style="margin-top:0">At a glance</h2>
+        <p class="section-sub">Quick facts and highlights.</p>
+        <ul>
+          <li>3+ years building responsive sites</li>
+          <li>Strong with semantic HTML & modern CSS</li>
+          <li>Accessibility‑first mindset </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">A few things I’ve built recently.</p>
+
+      <div class="grid projects">
+        <article class="card">
+          <h3>Portfolio Template</h3>
+          <p>Clean, single‑page layout with dark mode and smooth interactions.</p>
+          <div>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Responsive</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Landing Page</h3>
+          <p>Marketing page with hero section, feature grid, and call‑to‑action.</p>
+          <div>
+            <span class="chip">Grid</span>
+            <span class="chip">Animations</span>
+            <span class="chip">SEO</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Component Library</h3>
+          <p>Reusable, accessible components built with semantic HTML and utility CSS.</p>
+          <div>
+            <span class="chip">A11y</span>
+            <span class="chip">Design System</span>
+            <span class="chip">Docs</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Blog Theme</h3>
+          <p>Minimal, content‑first blog theme focused on readability and speed.</p>
+          <div>
+            <span class="chip">Typography</span>
+            <span class="chip">CSS Vars</span>
+            <span class="chip">Dark</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Want to work together? Send a note below.</p>
+      <form>
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <textarea name="message" placeholder="Tell me about your project" required></textarea>
+        <button class="send-btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Your Name • Built with HTML & CSS</div>
+  </footer>
+
+  <!-- Optional: No JS required; this tiny inline script just sets the year. If you must avoid all JS, delete it. -->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

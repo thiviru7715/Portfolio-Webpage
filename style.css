@@ -1,0 +1,116 @@
+
+:root{
+  --bg:#0b0f14;         /* page background */
+  --panel:#121821;      /* card & header */
+  --muted:#8a9fb4;      /* secondary text */
+  --text:#e6edf3;       /* primary text */
+  --accent:#5ae3b4;     /* primary accent */
+  --accent-2:#7aa2ff;   /* secondary accent */
+  --ring:rgba(90,227,180,.45);
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --maxw:1100px;
+}
+
+/* Reset / base */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background:radial-gradient(1200px 600px at 85% -10%, rgba(122,162,255,.12), transparent 60%),
+             radial-gradient(900px 500px at -10% 20%, rgba(90,227,180,.08), transparent 60%),
+             var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* Header */
+header{
+  position:sticky; top:0; z-index:10;
+  background:linear-gradient(0deg, rgba(11,15,20,.6), rgba(11,15,20,.9));
+  backdrop-filter:saturate(140%) blur(8px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.nav{
+  max-width:var(--maxw); margin:0 auto; padding:14px 20px;
+  display:flex; align-items:center; gap:18px;
+}
+.brand{font-weight:800; letter-spacing:.5px}
+.nav a{
+  color:var(--muted); text-decoration:none; padding:8px 12px; border-radius:10px;
+  transition:color .2s ease, background .2s ease;
+}
+.nav a:hover, .nav a:focus{color:var(--text); background:rgba(122,162,255,.08); outline:none}
+.spacer{flex:1}
+.cta{
+  background:linear-gradient(135deg, var(--accent), var(--accent-2));
+  color:#071017; font-weight:700; padding:10px 14px; border-radius:12px;
+  box-shadow:0 6px 20px var(--ring);
+}
+
+/* Sections */
+section{padding:80px 20px}
+.container{max-width:var(--maxw); margin:0 auto}
+.section-title{font-size:clamp(28px, 3vw, 42px); margin:0 0 14px}
+.section-sub{margin:0 0 32px; color:var(--muted)}
+
+/* Hero */
+.hero{display:grid; grid-template-columns:1.2fr .8fr; gap:32px; align-items:center}
+.tag{display:inline-flex; gap:8px; align-items:center; font-size:14px; color:var(--accent); background:rgba(90,227,180,.08); border:1px solid rgba(90,227,180,.25); padding:6px 10px; border-radius:999px}
+.hero h1{font-size:clamp(34px, 5vw, 56px); line-height:1.1; margin:16px 0}
+.hero p{color:var(--muted); margin:0 0 20px}
+.hero-card{
+  background:linear-gradient(180deg, rgba(122,162,255,.08), rgba(122,162,255,.03));
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);
+  padding:28px; box-shadow:var(--shadow);
+  animation:floatIn .8s ease-out both;
+}
+@keyframes floatIn{from{opacity:0; transform:translate3d(0,14px,0)} to{opacity:1; transform:none}}
+
+/* Projects */
+.grid{display:grid; gap:18px}
+.projects.grid{grid-template-columns:repeat(auto-fit, minmax(260px, 1fr))}
+.card{
+  background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius);
+  padding:22px; position:relative; overflow:hidden; box-shadow:var(--shadow);
+  transition:transform .2s ease, border-color .2s ease;
+}
+.card:hover{transform:translateY(-4px); border-color:rgba(122,162,255,.35)}
+.card h3{margin:0 0 8px}
+.card p{margin:0 0 14px; color:var(--muted)}
+.chip{display:inline-block; font-size:12px; color:#bcd2ee; border:1px dashed rgba(255,255,255,.12); border-radius:999px; padding:4px 10px; margin-right:8px}
+
+/* Contact */
+form{display:grid; gap:14px; max-width:640px}
+input, textarea{
+  background:#0f141b; border:1px solid rgba(255,255,255,.08); color:var(--text);
+  padding:14px 16px; border-radius:12px; font:inherit; outline:none;
+  transition:border-color .2s ease, box-shadow .2s ease;
+}
+textarea{min-height:140px; resize:vertical}
+input:focus, textarea:focus{border-color:var(--accent-2); box-shadow:0 0 0 6px rgba(122,162,255,.12)}
+.send-btn{
+  border:0; cursor:pointer; font-weight:700; padding:12px 16px; border-radius:12px;
+  background:linear-gradient(135deg, var(--accent-2), var(--accent)); color:#071017;
+  box-shadow:0 8px 24px var(--ring);
+}
+
+/* Footer */
+footer{padding:30px 20px; color:var(--muted); border-top:1px solid rgba(255,255,255,.06)}
+
+/* Utilities */
+.pill-links{display:flex; gap:10px; flex-wrap:wrap}
+.pill-links a{border:1px solid rgba(255,255,255,.08); border-radius:999px; padding:8px 12px; text-decoration:none; color:var(--text)}
+.pill-links a:hover{border-color:rgba(122,162,255,.35)}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr}
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{animation:none; transition:none}
+}
