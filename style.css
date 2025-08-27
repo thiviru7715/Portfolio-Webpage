@@ -179,8 +179,9 @@ footer a:hover {
   padding:40px 20px;
   }
   
+  
   .skill{
-  width:100%;
+  width:50%;
   background:var(--panel);
   border:1px solid rgba(255,255,255,.06);
   border-radius:var(--radius);
@@ -188,22 +189,27 @@ footer a:hover {
   box-shadow:var(--shadow);
   transition:transform .2s ease, border-color .2s ease;
   text-align:center;
-  min-width:0;
+  min-width:400px;
+  max-width: 50px;
   }
+  
   
   .skill:hover{
   transform:translateY(-4px);
   border-color:rgba(122,162,255,.35);
   }
   
+  
   .skill h3{
   margin:12px 0 8px;
   }
+  
   
   .skill p{
   margin:0;
   color:var(--muted);
   }
+  
   
   .skill img{
   display:block;
@@ -214,7 +220,8 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    max-width: 200px;
+    max-width: 60px;
+    min-width: 800px;
     margin: 50px auto;
     padding: 20px;
   }
