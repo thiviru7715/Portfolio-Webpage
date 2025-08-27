@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Personal Portfolio</title>
   <!-- Google Font (optional) -->
-  <link rel="icon" href="avatar.png" type="image/x-icon">
+  <link rel="icon" href="/images/avatar.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
   <!-- Header / Navigation -->
   <header>
     <nav class="nav">
-      <img src="avatar.png" alt="avatar" width="60">
+      <img src="/images/avatar.png" alt="avatar" width="60">
       <div class="brand">Thiviru Igalawithana</div>
       <div class="spacer"></div>
       <a href="#about">About</a>
@@ -26,14 +27,15 @@
   <section id="about">
     <div class="container hero">
       <div>
-        <span class="tag">👋 Hi — I build web things</span>
+        <span class="tag">👋 Hi — I'm Thiviru Igalawithana. I build web things</span><br><br>
+        <img src="/images/Thiviru.jpg" alt="thiviru" width="190" style="border-radius: 10px;">
         <h1>Designer & Front‑End Developer</h1>
         <p>
-          I craft sleek, accessible user experiences with modern HTML & CSS. I love design systems, performance, and micro‑interactions.
+          I craft sleek, accessible user experiences with modern HTML , CSS & JavaScript. I love design systems, performance, and micro‑interactions.
         </p>
         <div class="pill-links">
           <a href="#projects">View my work</a>
-          <a href="mailto:you@example.com">Email me</a>
+          <a href="mailto:thivirudamsith7715@gmail.com.com">Email me</a>
           <a href="#contact">Let’s talk</a>
         </div>
       </div>
@@ -41,11 +43,60 @@
         <h2 class="section-title" style="margin-top:0">At a glance</h2>
         <p class="section-sub">Quick facts and highlights.</p>
         <ul>
-          <li>3+ years building responsive sites</li>
-          <li>Strong with semantic HTML & modern CSS</li>
+          <li>Strong with semantic HTML, modern CSS & JavaScript</li>
           <li>Accessibility‑first mindset </li>
         </ul>
       </aside>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">📧</div>
+          <div class="info-content">
+            <div class="info-label">Email</div>
+            <div class="info-value">thivirudamsith7715@gmail.com</div>
+          </div>
+        </div>
+    
+        <div class="info-card">
+          <div class="info-icon">📱</div>
+          <div class="info-content">
+            <div class="info-label">Phone</div>
+            <div class="info-value">+94 743456355</div>
+          </div>
+        </div>
+    
+        <div class="info-card">
+          <div class="info-icon">📅</div>
+          <div class="info-content">
+            <div class="info-label">Birthday</div>
+            <div class="info-value">January 14, 2006</div>
+          </div>
+        </div>
+    
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div class="info-content">
+            <div class="info-label">Location</div>
+            <div class="info-value">Galle, Srilanka</div>
+          </div>
+        </div>
+      </div><br>
+
+      <article class="skill">
+        <img src="/images/design.png" alt="design-icon" width="40">
+        <h3>Web design</h3>
+        <p>The most modern and high-quality design made at a professional level.</p>
+      </article>
+      <article class="skill">
+        <img src="/images/development.png" alt="design-icon" width="40">
+        <h3>Web development</h3>
+        <p>High-quality development of sites at the professional level.</p>
+      </article>
+      <article class="skill">
+        <img src="/images/photo.png" alt="design-icon" width="40">
+        <h3>Photography</h3>
+        <p>I make high-quality photos of any category at a professional level.</p>
+      </article>
     </div>
   </section>
 
@@ -86,15 +137,6 @@
           </div>
         </article>
 
-        <article class="card">
-          <h3>Blog Theme</h3>
-          <p>Minimal, content‑first blog theme focused on readability and speed.</p>
-          <div>
-            <span class="chip">Typography</span>
-            <span class="chip">CSS Vars</span>
-            <span class="chip">Dark</span>
-          </div>
-        </article>
       </div>
     </div>
   </section>
@@ -114,8 +156,24 @@
   </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> Your Name • Built with HTML & CSS</div>
-  </footer>
+    <div class="footer-content container">
+        <p>&copy; 2025 Thiviru Igalawithana. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+            <a href="#">
+                <i class="fab fa-facebook-f social-icon"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin-in social-icon"></i>
+            </a>
+        </div>
+    </div>
+</footer>
 
   <!-- Optional: No JS required; this tiny inline script just sets the year. If you must avoid all JS, delete it. -->
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
