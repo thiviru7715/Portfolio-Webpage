@@ -348,20 +348,20 @@ footer a:hover {
 }
 
 .facebook {
-    background-image: url('/images/face.png');
+    background-image: url('images/face.png');
 }
 
 .twitter {
-    background-image: url('/images/x.png');
+    background-image: url('images/x.png');
 }
 
 .instagram {
-    background-image: url('/images/insta.png');
+    background-image: url('images/insta.png');
 }
 
 .linkedin {
-    background-image: url('/images/link.png');
+    background-image: url('images/link.png');
 }
 .github {
-  background-image: url('/images/git.png');
+  background-image: url('images/git.png');
 }
