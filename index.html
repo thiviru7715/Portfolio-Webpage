@@ -1,238 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Personal Portfolio</title>
-  <!-- Google Font (optional) -->
+  <title>Thiviru Igalawithana | Portfolio</title>
   <link rel="icon" href="images/avatar.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
+
   <!-- Header / Navigation -->
   <header>
-    <nav class="nav">
-      <img src="images/avatar.png" alt="avatar" width="60">
+    <nav class="nav container">
       <div class="brand">Thiviru Igalawithana</div>
-      <div class="spacer"></div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact" class="cta">Contact</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta">Contact</a>
+      </div>
     </nav>
   </header>
 
   <!-- Hero / About -->
-  <section id="about">
+  <section id="about" class="hero-section">
     <div class="container hero">
       <div>
-        <span class="tag">👋 Hi — I'm Thiviru Igalawithana. I build web things</span><br><br>
-        <img src="images/Thiviru.jpg" alt="thiviru" width="190" style="border-radius: 10px;">
-        <div class="social-icons">
-          <a href="https://web.facebook.com/thiviru.77" class="icon facebook"></a>
-        <a href="#" class="icon twitter"></a>
-        <a href="https://www.linkedin.com/in/thiviru-igalawithana-47b652349/" class="icon linkedin"></a>
-        <a href="https://www.instagram.com/thiviru__7/" class="icon instagram"></a>
-        <a href="https://github.com/thiviru7715" class="icon github"></a>
-      </div>
-        <h1>UI/UX Designer & Front‑End Developer</h1>
+        <span class="tag">👋 Hi — I'm Thiviru Igalawithana</span>
+        <h1 id="typewriter-text"></h1>
         <p>
-          I craft sleek, accessible user experiences with modern HTML , CSS & JavaScript. I love design systems, performance, and micro‑interactions.
+          I craft sleek, accessible user experiences with modern React, HTML, CSS & JavaScript. I love design systems,
+          performance, and micro‑interactions.
         </p>
         <div class="pill-links">
           <a href="#projects">View my work</a>
           <a href="mailto:thivirudamsith7715@gmail.com">Email me</a>
-          <a href="#contact">Let’s talk</a>
         </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="info-content">
+              <div class="info-label">Email</div>
+              <div class="info-value">thivirudamsith7715@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div class="info-content">
+              <div class="info-label">Phone</div>
+              <div class="info-value">+94 743456355</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-calendar"></i></div>
+            <div class="info-content">
+              <div class="info-label">Birthday</div>
+              <div class="info-value">January 14, 2006</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-content">
+              <div class="info-label">Location</div>
+              <div class="info-value">Galle, Sri Lanka</div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
       <aside class="hero-card">
-        <h2 class="section-title">At a glance</h2>
-        <p class="section-sub">Quick facts and highlights.</p>
+        <img src="images/Thiviru.jpg" alt="Thiviru Igalawithana"
+          style="border-radius: 10px; width: 100%; margin-bottom: 20px; object-fit: cover;">
+        <h2 class="section-title" style="font-size: 1.5rem; text-align: left;">At a glance</h2>
         <ul>
           <li>Strong with semantic HTML, modern CSS & JavaScript</li>
-          <li>Accessibility‑first mindset </li>
+          <li>Accessibility‑first mindset</li>
+          <li>Passionate about UI/UX</li>
         </ul>
+        <div class="social-links" style="justify-content: flex-start; margin-top: 20px;">
+          <a href="https://web.facebook.com/thiviru.77"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/thiviru-igalawithana-47b652349/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/thiviru__7/"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/thiviru7715"><i class="fab fa-github"></i></a>
+        </div>
       </aside>
-
-      <div class="info-grid">
-        <div class="info-card">
-          <div class="info-icon">📧</div>
-          <div class="info-content">
-            <div class="info-label">Email</div>
-            <div class="info-value">thivirudamsith7715@gmail.com</div>
-          </div>
-        </div>
-    
-        <div class="info-card">
-          <div class="info-icon">📱</div>
-          <div class="info-content">
-            <div class="info-label">Phone</div>
-            <div class="info-value">+94 743456355</div>
-          </div>
-        </div>
-    
-        <div class="info-card">
-          <div class="info-icon">📅</div>
-          <div class="info-content">
-            <div class="info-label">Birthday</div>
-            <div class="info-value">January 14, 2006</div>
-          </div>
-        </div>
-
-        <div class="info-card">
-          <div class="info-icon">📍</div>
-          <div class="info-content">
-            <div class="info-label">Location</div>
-            <div class="info-value">Galle, Srilanka</div>
-          </div>
-        </div></div>
-      
-
-      <div class="info-card">
-          <div class="info-icon">🎓</div>
-          <div class="info-content">
-            <div class="info-label">University</div>
-            <div class="info-value">University of Westminster</div>
-          </div>
-          </div>
-      </div><br>
-
-      <div class="skills">
-        <article class="skill">
-          <img src="images/design.png" alt="design-icon" width="40">
-          <h3>Web design</h3>
-          <p>The most modern and high-quality design made at a professional level.</p>
-        </article>
-
-        <article class="skill">
-          <img src="images/development.png" alt="design-icon" width="40">
-          <h3>Web development</h3>
-          <p>High-quality development of sites at the professional level.</p>
-        </article>
-
-        <article class="skill">
-          <img src="images/photo.png" alt="design-icon" width="40">
-          <h3>Photography</h3>
-          <p>I make high-quality photos of any category at a professional level.</p>
-        </article>
-      </div>
     </div>
   </section>
 
-   <div class="skill-header">
-      <h2>Skills</h2>
-      </div>  
-            <div class="skills-grid">
-                <div class="skill-column">
-                    <div class="skill-label">HTML/CSS</div>
-                    <div class="skill-bar">
-                        <div class="bar bar-long"></div>
-                    </div><br>
-                    <div class="skill-label">JavaScript</div>
-                    <div class="skill-bar">
-                        <div class="bar bar-mid"></div>
-                    </div><br>
-                    <div class="skill-label">React</div>
-                    <div class="skill-bar">
-                        <div class="bar bar-short"></div>
-                    </div>
-                </div>
-                <div class="skill-column">
-                    <div class="skill-label">Python</div>
-                    <div class="skill-bar">
-                        <div class="bar bar-mid"></div>
-                    </div><br>
-                    <div class="skill-label">Java</div>
-                    <div class="skill-bar">
-                        <div class="bar bar-long"></div>
-                    </div><br>
-                    <div class="skill-label">Git/Github</div>
-                    <div class="skill-bar">
-                        <div class="bar bar-mid"></div>
-                    </div>
-                </div>
+  <!-- Skills -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-sub">What I bring to the table.</p>
+
+      <div class="skills-grid-cards">
+        <article class="skill-card">
+          <img src="images/design.png" alt="design-icon">
+          <h3>Web Design</h3>
+          <p>Modern, high-quality design focused on user experience.</p>
+        </article>
+
+        <article class="skill-card">
+          <img src="images/development.png" alt="dev-icon">
+          <h3>Web Development</h3>
+          <p>Clean, efficient code for performant websites.</p>
+        </article>
+
+        <article class="skill-card">
+          <img src="images/photo.png" alt="photo-icon">
+          <h3>Photography</h3>
+          <p>Professional photography and visual storytelling.</p>
+        </article>
+      </div>
+
+      <div class="skill-bars-container">
+        <div class="skill-column">
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <div class="skill-meta"><span>HTML/CSS</span><span>90%</span></div>
+            <div class="progress-bar">
+              <div class="progress" style="--w:90%"></div>
             </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>JavaScript</span><span>75%</span></div>
+            <div class="progress-bar">
+              <div class="progress" style="--w:75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>React</span><span>60%</span></div>
+            <div class="progress-bar">
+              <div class="progress" style="--w:60%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-column">
+          <h3>Backend & Tools</h3>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Python</span><span>70%</span></div>
+            <div class="progress-bar">
+              <div class="progress" style="--w:70%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Java</span><span>80%</span></div>
+            <div class="progress-bar">
+              <div class="progress" style="--w:80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Git/GitHub</span><span>85%</span></div>
+            <div class="progress-bar">
+              <div class="progress" style="--w:85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Projects -->
   <section id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title">Featured Projects</h2>
       <p class="section-sub">A few things I’ve built recently.</p>
 
-      <div class="grid projects">
+      <div class="projects-grid">
 
-        <article class="card">
-          <h3>NexAttend Website</h3>
-          <p>Built a fully responsive website using React,Tailwind CSS, JavaScript.For the Automate attendance with AI Multi-Face Detection and transform the teaching experience.</p>
-          link : <a href="https://nexattend.com/" target="_blank">NexAttend Website</a>
-          <div>
-            <span class="chip">React</span>
-            <span class="chip">CSS</span>
-            <span class="chip">JavaScript</span>
+        <article class="project-card">
+          <div class="project-content">
+            <h3>NexAttend Website</h3>
+            <p>Automated attendance system with AI Multi-Face Detection. Built with React and Tailwind CSS.</p>
+            <a href="https://nexattend.com/" target="_blank" style="color: var(--accent); font-weight: 600;">View
+              Project &rarr;</a>
+            <div class="tags">
+              <span class="chip">React</span>
+              <span class="chip">Tailwind</span>
+              <span class="chip">AI</span>
+            </div>
           </div>
         </article>
 
-        <article class="card">
-          <h3>EnerFlow Website</h3>
-          <p>Built a fully responsive website using HTML, CSS, JavaScript.Contributed to front-end layout
-            design and ensured compatibility across devices</p>
-            link : <a href="http://imalkaperera.live/EnerFlow-WebDevCW/" target="_blank">EnerFlow Website</a>
-          <div>
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">JavaScript</span>
+        <article class="project-card">
+          <div class="project-content">
+            <h3>EnerFlow Website</h3>
+            <p>Front-end layout design and compatibility optimization for energy management system.</p>
+            <a href="http://imalkaperera.live/EnerFlow-WebDevCW/" target="_blank"
+              style="color: var(--accent); font-weight: 600;">View Project &rarr;</a>
+            <div class="tags">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JS</span>
+            </div>
           </div>
         </article>
 
-        <article class="card">
-          <h3>CoreTools Website</h3>
-          <p>Built a fully responsive website using HTML, CSS, JavaScript.</p>
-          link : <a href="https://thiviru7715.github.io/CoreTools-Website/" target="_blank">CoreTools Website</a>
-          <div>
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">JavaScript</span>
+        <article class="project-card">
+          <div class="project-content">
+            <h3>CoreTools Website</h3>
+            <p>A collection of developer tools and utilities built with vanilla web technologies.</p>
+            <a href="https://thiviru7715.github.io/CoreTools-Website/" target="_blank"
+              style="color: var(--accent); font-weight: 600;">View Project &rarr;</a>
+            <div class="tags">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JS</span>
+            </div>
           </div>
         </article>
 
       </div>
     </div>
-  </section><br>
+  </section>
 
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-sub">Want to work together? Send a note below.</p>
-      <form>
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Email address" required>
-        <textarea name="message" placeholder="Tell me about your project" required></textarea>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">Have a project in mind? Let's talk.</p>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
         <button class="send-btn" type="submit">Send Message</button>
       </form>
     </div>
   </section>
 
   <footer>
-    <div class="footer-content container">
-        <p>&copy; 2025 Thiviru Igalawithana. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Contact Us</a>
-            <a href="#">
-                <i class="fab fa-facebook-f social-icon"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-twitter social-icon"></i>
-            </a>
-            <a href="#">
-                <i class="fab fa-linkedin-in social-icon"></i>
-            </a>
-        </div>
+    <div class="container">
+      <p>&copy; 2025 Thiviru Igalawithana. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://web.facebook.com/thiviru.77"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/thiviru-igalawithana-47b652349/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/thiviru__7/"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-</footer>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
+
 </html>
