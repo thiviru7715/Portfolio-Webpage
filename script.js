@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const text1 = "UI/UX Designer &";
     const text2 = "Front‑End Developer";
-    const speed = 100; // Typing speed in ms
+    const speed = 70; // Typing speed in ms
     const element = document.getElementById("typewriter-text");
 
     let i = 0;
