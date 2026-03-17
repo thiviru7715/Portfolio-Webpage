@@ -1,5 +1,5 @@
-
 document.addEventListener('DOMContentLoaded', function () {
+    // --- Typewriter Effect ---
     const text1 = "UI/UX Designer &";
     const text2 = "Front‑End Developer";
     const speed = 70; // Typing speed in ms
@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let j = 0;
 
     function typeWriter() {
+        if (!element) return;
         if (i < text1.length) {
             element.innerHTML += text1.charAt(i);
             i++;
@@ -22,11 +23,59 @@ document.addEventListener('DOMContentLoaded', function () {
             j++;
             setTimeout(typeWriter, speed);
         } else {
-            // Animation finished, maybe add a blinking cursor class or remove it
             element.style.borderRight = "none";
         }
     }
 
-    // Start typing
     typeWriter();
+
+    // --- Scroll Reveal Animation ---
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealCallback = function (entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Optional: Stop observing once revealed so animation only plays once
+                observer.unobserve(entry.target); 
+            }
+        });
+    };
+
+    const revealOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
+
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // --- Custom Mouse Follower ---
+    const cursorDot = document.getElementById('cursor-dot');
+    
+    window.addEventListener('mousemove', function(e) {
+        if (!cursorDot) return;
+        
+        // Use requestAnimationFrame for smoother performance
+        requestAnimationFrame(() => {
+            cursorDot.style.left = `${e.clientX}px`;
+            cursorDot.style.top = `${e.clientY}px`;
+        });
+    });
+
+    // Add active class on hoverable elements
+    const hoverables = document.querySelectorAll('a, button, .skill-card, .project-card, .info-card');
+    
+    hoverables.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            if (cursorDot) cursorDot.classList.add('active');
+        });
+        
+        el.addEventListener('mouseleave', () => {
+            if (cursorDot) cursorDot.classList.remove('active');
+        });
+    });
 });
