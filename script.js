@@ -110,4 +110,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+    // --- Scroll Progress Bar ---
+    const scrollProgress = document.getElementById('scroll-progress');
+    if (scrollProgress) {
+        window.addEventListener('scroll', () => {
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalHeight) * 100;
+            scrollProgress.style.width = `${progress}%`;
+        });
+    }
 });
